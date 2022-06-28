@@ -42,3 +42,16 @@
 
 
 * If everything has been setup correctly, you should be able to click the two links in the navbar to switch between the Home Page and the Blogs Page in the browser. ✅
+
+## SECOND PART OF ASSIGNMENTS
+
+* Create a new folder ./src/utils and add the sampleBlogs.js file into it as ./src/utils/sampleBlogs.js. ✅
+
+* Create a new component BlogPost in ./src/components/BlogPost.js. 
+    * Import the sample blogs into ./src/components/BlogPost.js.
+    * Nest a new route under the "/blogs" route, the path should be ":blogId", the element should be <BlogPost/>
+        * https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes
+    * The BlogPost component should get the blog ID from the useParams() hook and display that blog on the page.
+        * https://reactrouter.com/docs/en/v6/getting-started/tutorial#reading-url-params
+    * Add the <Outlet> react-router component to the <Blogs> component to display the <BlogPost/> component to the /blogs page.
+    * I.E. localhost:3000/blogs/1 should display the blog with id === 1 to the blogs page.
