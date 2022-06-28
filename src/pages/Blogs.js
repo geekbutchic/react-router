@@ -1,12 +1,12 @@
-import Navbar from '../components/Navbar'
+import Navbar from "../components/Navbar";
 
 const Blogs = () => {
-    return (
-      <div className='blog-page'>
-        <Navbar/>
-        <h1>Blogs Page</h1>
-      </div>
-    );
-  };
-  
-  export default Blogs;
+  return (
+    <div className="blog-page ">
+      <Navbar />
+      <h1>Blogs Page</h1>
+    </div>
+  );
+};
+
+export default Blogs;
