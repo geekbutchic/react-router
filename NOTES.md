@@ -47,9 +47,9 @@
 
 * Create a new folder ./src/utils and add the sampleBlogs.js file into it as ./src/utils/sampleBlogs.js. ✅
 
-* Create a new component BlogPost in ./src/components/BlogPost.js. 
+* Create a new component BlogPost in ./src/components/BlogPost.js. ✅
     * Import the sample blogs into ./src/components/BlogPost.js.
-    * Nest a new route under the "/blogs" route, the path should be ":blogId", the element should be <BlogPost/>
+    * Nest a new route under the "/blogs" route, the path should be ":blogId", the element should be <BlogPost/>. ✅
         * https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes
     * The BlogPost component should get the blog ID from the useParams() hook and display that blog on the page.
         * https://reactrouter.com/docs/en/v6/getting-started/tutorial#reading-url-params
