@@ -59,7 +59,7 @@
 * Create a new component AllBlogs in ./src/components/AllBlogs.js. ✅
     * Import the sample blogs into ./src/components/AllBlogs.js. ✅
     * Nest a new route under the "/blogs" route, the path should be "all", the element should be <AllBlogs/>. ✅
-    * The <AllBlogs /> component should display all the blogs in sample blogs to the page.
+    * The <AllBlogs /> component should display all the blogs in sample blogs to the page. ✅
     * If you set this up correctly, localhost:3000/blogs/all should display all the blogs to the blogs page.
     * Implement a query param for sorting in the <AllBlogs /> component.
     * I.E. localhost:3000/blogs/all?sortOrder=asc&sortField=createdAt should sort the displayed blogs by ascending order based upon the createdAt date.
