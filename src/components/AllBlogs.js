@@ -12,11 +12,11 @@ const AllBlogs = () => {
                 <div
                 key={`${blogs}-${index}`}
                 >
-                    Author: {blogs.author}
+                    <h2>Author: {blogs.author}</h2>
                     Date: {blogs.createdAt}
-                    ID: {blogs.id}
+                    <h4>ID: {blogs.id}</h4>
+                    <h4>Title: {blogs.title}</h4>
                     Text: {blogs.text}
-                    Title: {blogs.title}
                 </div>
             )
         })}
