@@ -51,7 +51,21 @@
     * Import the sample blogs into ./src/components/BlogPost.js.
     * Nest a new route under the "/blogs" route, the path should be ":blogId", the element should be <BlogPost/>. ✅
         * https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes
-    * The BlogPost component should get the blog ID from the useParams() hook and display that blog on the page.
-        * https://reactrouter.com/docs/en/v6/getting-started/tutorial#reading-url-params
+    * The BlogPost component should get the blog ID from the useParams() hook and display that blog on the page. ✅
+        * https://reactrouter.com/docs/en/v6/getting-started/tutorial#reading-url-params ✅
     * Add the <Outlet> react-router component to the <Blogs> component to display the <BlogPost/> component to the /blogs page.
-    * I.E. localhost:3000/blogs/1 should display the blog with id === 1 to the blogs page.
+    * I.E. localhost:3000/blogs/1 should display the blog with id === 1 to the blogs page. ✅
+
+* Create a new component AllBlogs in ./src/components/AllBlogs.js. ✅
+    * Import the sample blogs into ./src/components/AllBlogs.js. ✅
+    * Nest a new route under the "/blogs" route, the path should be "all", the element should be <AllBlogs/>. ✅
+    * The <AllBlogs /> component should display all the blogs in sample blogs to the page.
+    * If you set this up correctly, localhost:3000/blogs/all should display all the blogs to the blogs page.
+    * Implement a query param for sorting in the <AllBlogs /> component.
+    * I.E. localhost:3000/blogs/all?sortOrder=asc&sortField=createdAt should sort the displayed blogs by ascending order based upon the createdAt date.
+    * https://reactrouter.com/docs/en/v6/getting-started/tutorial#search-params
+    * Implement a query param for limit and page in the <AllBlogs /> component.
+        * I.E. localhost:3000/blogs/all?limit=2&page=1 should show the blog posts with id === 3 and id === 4 since blog posts 1 and 2 are on the first page.
+Stretch Goal:    
+* All query params (sorting, limit, page) in <AllBlogs /> should be able to be used at the same time. 
+    * I.E. localhost:3000/blogs/all?limit=4&page=0&sortOrder=desc&sortField=id should show the first 4 blogs sorted by decending order based upon id.
