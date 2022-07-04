@@ -5,7 +5,7 @@ const Info = () => {
     <div className="home-page">
       <Navbar />
       <p>
-        
+        INFO PAGE
       </p>
     </div>
   );
