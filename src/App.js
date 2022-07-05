@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
+import NotFound from './pages/NotFound'
 import AllBlogs from "./components/AllBlogs";
 import BlogPost from "./components/BlogPost";
 import SubmitBlog from "./pages/SubmitBlog";
@@ -26,6 +27,7 @@ function App() {
             <Route path="submit-blog" element={<SubmitBlog/>} />
           </Route>
           {/* END OF PARENT ROUTE -  */}
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </header>
     </div>
