@@ -8,7 +8,7 @@ const AllBlogs = (props) => {
   //http://localhost:3000/blogs/all?sortOrder=asc or desc
   const sortOrder = searchParams.get("sortOrder") || "asc"
   const sortField = searchParams.get("sortField") || "createdAt"
-  const limit = Number(searchParams.get("limit")) || 4
+  const limit = Number(searchParams.get("limit")) || 10
   const page = Number(searchParams.get("page")) || 0
 
   //http://localhost:3000/blogs/all?sortField=id&sortOrder=desc or asc

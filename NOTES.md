@@ -68,18 +68,19 @@
         * I.E. localhost:3000/blogs/all?limit=2&page=1 should show the blog posts with id === 3 and id === 4 since blog posts 1 and 2 are on the first page.
 Stretch Goal:    
 * All query params (sorting, limit, page) in <AllBlogs /> should be able to be used at the same time. 
-    * I.E. localhost:3000/blogs/all?limit=4&page=0&sortOrder=desc&sortField=id should show the first 4 blogs sorted by decending order based upon id.
+    * I.E. localhost:3000/blogs/all?limit=4&page=0&sortOrder=desc&sortField=id should show the first 4 blogs sorted by decending order based upon id. ✅
 
 
-* Change the "/blogs/all" route to be the index route for blogs so that the <AllBlogs> component displays in "/blogs" by default (you don't need to define a path for "/blogs/all" anymore since it's the index route).
+* Change the "/blogs/all" route to be the index route for blogs so that the <AllBlogs> component displays in "/blogs" by default (you don't need to define a path for "/blogs/all" anymore since it's the index route). ✅
     * <Route path="/blogs" element={<Blogs />}>
         <Route index element={<AllBlogs />} />
-    </Route>
-* Create a new component <SubmitBlog /> in ./src/pages/SubmitBlog.js (this will be a new page).
-* Create a new route in <Routes> with the path "/submit-blog" and the element <SubmitBlog />
+    </Route> 
+* Create a new component <SubmitBlog /> in ./src/pages/SubmitBlog.js (this will be a new page). ✅
+
+* Create a new route in <Routes> with the path "/submit-blog" and the element <SubmitBlog /> 
 * In <SubmitBlog />, add the following:
-    * A state variable and input field for the new blog title
-    * A state variable and input field for the new blog description
-    * A state variable and input field for the new blog author
+    * A state variable and input field for the new blog title. ✅
+    * A state variable and input field for the new blog description. ✅
+    * A state variable and input field for the new blog author. ✅
     * A button that will push the new blog data into sample blogs and programmatically redirect the user to "/blogs". Remember, the new blog post will need the id and createdAt field set before you push it into the sample blogs array.
     * If you implemented this correctly, you should be able to submit a new blog into the sample blogs list and then the browser should automatically redirect to the all blogs display page after submission.
